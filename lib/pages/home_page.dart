@@ -6,7 +6,7 @@ import 'cart_page.dart';
 
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -35,15 +35,16 @@ class _HomePageState extends State<HomePage> {
       ),
       appBar: AppBar(
         leading:  Builder(
-          builder: (context) => IconButton(onPressed:(){
+          builder: (context) {
+             return IconButton(onPressed: () {
               Scaffold.of(context).openDrawer();
-            } ,
-                icon: const Padding(
-                  padding:  EdgeInsets.only(left: 12.0),
+            },
+                icon:  Padding(
+                  padding: EdgeInsets.only(left: 12.0),
                   child: Icon(Icons.menu,
                     color: Colors.black,),
-                ))
-
+                ));
+          }
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,

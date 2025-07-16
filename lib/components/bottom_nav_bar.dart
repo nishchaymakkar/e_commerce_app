@@ -20,7 +20,7 @@ class MyBottomNavBar extends StatelessWidget {
           onTabChange: (value) => onTabChange!(value),
           tabs: [
             GButton(
-                icon: Icons.shop,
+                icon: Icons.home,
                 text: 'Shop',
             ),
             GButton(
