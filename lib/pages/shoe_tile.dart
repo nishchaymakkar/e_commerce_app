@@ -51,7 +51,7 @@ class ShoeTile extends StatelessWidget {
                 ),
 
                 GestureDetector(
-                  onTap: () => onTap,
+                  onTap:  onTap,
                   child: Container(
                     padding: EdgeInsets.all(12),
                       decoration: const BoxDecoration(
